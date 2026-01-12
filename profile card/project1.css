@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("NATSU.jpeg");
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: rgba(43, 47, 59, 0.36);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+.profile-card .natsu{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+}
+.natsu{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px #fff;
+    margin-bottom: 15px;
+}
+.profile-card .text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-content .fairy{
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.text-content .tail{
+    font-size: 16px;
+    color: #ffffff;
+}
+.profile-card .buttons{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.buttons .follow-btn{
+    border: none;
+    border-radius: 25px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background:transparent;
+    cursor: pointer;
+}
+.buttons .message-btn{
+    border: none;
+    border-radius: 25px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background:transparent;
+    cursor: pointer;
+}
+
+.buttons .follow-btn:hover,
+.buttons .message-btn:hover{
+     transform: translateY(-5px);
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    transition: all 0.3s ease;
+}
+.profile-card:hover{
+    transform: translateY(-5px);
+    transition: all 0.4s ease;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+a:hover{
+    text-decoration: underline;
+}
+
