@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup — E‑Shop</title>
+    <link rel="stylesheet" href="frontend.css">
+</head>
+<body>
+    <div class="home">
+        <nav class="navigation">
+            <div class="container nav-inner">
+                <a class="logo" href="HOME.html">E‑Shop</a>
+                <div class="nav-links">
+                    <a href="HOME.html">HOME</a>
+                    <a href="PRODUCTS.html">PRODUCTS</a>
+                    <a href="ABOUTUS.html">ABOUT US</a>
+                    <a id="signup-link" class="active" href="login.html">SIGNUP</a>
+                </div>
+                <div class="nav-actions">
+                    <span class="user-info" id="user-info"></span>
+                    <button class="hamburger" id="hamburger" aria-label="Open menu"><div></div><div></div><div></div></button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container">
+            <h1>Account</h1>
+            <div class="auth-grid">
+                <section class="form" style="max-width:360px;">
+                    <h3>Login</h3>
+                    <form id="login-form">
+                        <label for="login-email">Email</label>
+                        <input id="login-email" type="email" required>
+
+                        <label for="login-password">Password</label>
+                        <input id="login-password" type="password" required>
+
+                        <button class="btn" type="submit">Log in</button>
+                    </form>
+                </section>
+
+                <section class="form" style="max-width:420px;">
+                    <h3>Sign up</h3>
+                    <form id="signup-form">
+                        <label for="signup-username">Username</label>
+                        <input id="signup-username" type="text" required>
+
+                        <label for="signup-email">Email</label>
+                        <input id="signup-email" type="email" required>
+
+                        <label for="signup-password">Password</label>
+                        <input id="signup-password" type="password" required>
+
+                        <button class="btn" type="submit">Create account</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="frontend.js"></script>
+</body>
+</html>
